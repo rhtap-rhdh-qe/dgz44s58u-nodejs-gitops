@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: dgz44s58u-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: dgz44s58u-nodejs 
+  name: dgz44s58u-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: dgz44s58u-nodejs 
